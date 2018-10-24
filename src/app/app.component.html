@@ -1,3 +1,9 @@
-<a-scene embedded>
- <a-sky src="assets/panorama.jpg" rotation="0 -130 0"></a-sky>
-</a-scene>
+
+<!--<product-header sliderValue="{{dataFromSlider}}"></product-header>-->
+<product-header [sliderValue]="dataFromSlider"></product-header>
+<div class="container-fluid">
+
+    <div class="row">
+        <my-name first="Vitalij" last="From stencil" (valueChanged)="valueIsChanging($event)"></my-name>
+    </div>
+</div>

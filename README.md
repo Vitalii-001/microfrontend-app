@@ -1,28 +1,14 @@
-# Angular-CLI-Aframe
-The actions above are already implemented inside the project, feel free to clone and install dependencies.
-```
-npm i
-ng serve 
-```
-<br>
+# Angular 6 Elements To Create MicroFront End Application
 
+Default Angular CLI build
 
-**1. Edit ```Polyfills.ts```**
+* `npm run build` build the header component
+* `node server` to run a standalone header application
 
-```import 'aframe';```
+Build and publish reusable module like any other Angular module
 
-**Note:** current line should be inserted before ```import 'zone.js/dist/zone';``` 
-<br><br><br>
-**2. Modify**  ```app.module.ts```  **with CUSTOM_ELEMENTS_SCHEMA**
+* `./build.sh` to create reusable package
+* `npm publish` publish the package to npm
 
-```
-import { ...CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
-@NgModule({
-  imports: [ ... ],
-  declarations: [ AppComponent ],
-  bootstrap: [ AppComponent ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
-})
-
-```
+Building MicroFront End Application using Angular Elements/Web Components
+Read the complete walkthrough in the article: 
